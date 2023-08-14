@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <link rel="icon" href="ottlogo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTT</title>
+    <style>
+      body{
+        background-color: black;
+      }
+      div{
+        position: sticky;
+      }
+        nav{
+            height: 70px;
+            width: 1500px;
+            background-color: rgb(247, 247, 238,0.4);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+
+        }
+        .nav-logo{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-left: 10px;
+            position: sticky;
+            /* top: 15px; */
+        }
+        .nav-items a{
+            font-size: 20px;
+            text-decoration: none;
+            margin-left: 90px;
+            
+
+        }
+        .nav-items a:hover{
+            color:chartreuse;
+            font-family: fantasy;
+            font-weight: 300;
+            transform: scale(5);
+           
+        }
+        .fw img{
+          margin-left: 10px;
+          border-radius: 10px;
+          height: 390px;
+          width: 230px;
+          padding: 5px;
+          background-color: black;
+          position: relative;
+        }
+        .rw img{
+          margin-left: 10px;
+          border-radius: 10px;
+          height: 390px;
+          width: 230px;
+          padding: 5px;
+          background-color: black;
+          position: relative;
+        }
+        .carousel-inner{
+          height: 550px;
+          width: 85%;
+          margin-top: 10px;
+          margin-left: 150px;
+          position: sticky;
+        }
+        .fw img:hover{
+          scale: 1.1;
+          transform: translateY(20deg);
+          box-shadow: 10px;
+
+        }
+        .rw img:hover{
+          transform: scale(1.1);
+        }
+        .pl{
+         transform: translate(850px,60px);
+
+        }
+        .ip{
+          transform: translate(1150px,-10px);
+        }
+        .about{
+          font-size: 30px;
+        }
+        
+      
+        
+    </style>
+</head>
+<body>
+  <div class="pavan">
+    <nav>
+        <div class="nav-logo">
+            <img src="navlogo.jpg" alt="" height="60px" width="80px">
+        </div>
+        <div class="nav-items">
+            <a href="#carouselExampleAutoplaying">Home</a>
+            <a href="#freq">Frequently Watched</a>
+            <a href="#rect">Recent</a>
+            <a href="">Top rated</a>
+            <a href="">Favourate</a>
+            <a href="#about">About</a>
+            <a href="">SignUp/SignIn</a>
+        </div>
+    </nav>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-intravel="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="kushi.jpg" class="d-block w-100" alt="..." height="800px" width="800px">
+          </div>
+          <div class="carousel-item">
+            <img src="bro.jpg" class="d-block w-100" alt="..." height="800px" width="800px">
+          </div>
+          <div class="carousel-item">
+            <img src="Bheemla-Nayak-1.webp" class="d-block w-100" alt="..." height="800px" width="800px">
+          </div>
+          <div class="carousel-item">
+            <img src="Panjaa.webp" class="d-block w-100" alt="..." height="800px" width="800px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <div class="fw" id="freq"><h1>Frequently watched</h1>
+      <img src="attarintiki.jpg" alt="">
+      <img src="badri.jpg" alt="">
+      <img src="Bheemla-Nayak-1.webp">
+      <img src="jalsa.jpg" alt="">
+      <img src="agnathavaasi.jpg" alt="">
+      <img src="Panjaa.webp" alt=""><br><br>
+      <img src="krack.jpg" alt="">
+      <img src="johny.jpg" alt="">
+      <img src="ishq.webp" alt="">
+      <img src="katamarayudu.jpg" alt="">
+      <img src="nenusailaja.webp" alt="">
+      <img src="premam.jpg" alt="">
+    </div><hr>
+    <div class="rw" id="rect"><h1>Recently watched</h1>
+      <img src="bro.jpg" alt="">
+      <img src="gabbersing.jpg" alt="">
+      <img src="cameraman.jpg" alt="">
+      <img src="gudumbashankar.jpg">
+      <img src="Hari Hara Veera Mallu Pictures, Photo.PNG" alt="">
+      <img src="tammudu.webp" alt=""><br><br>
+      <img src="Ori Devuda.webp" alt="">
+      <img src="KGF.jpg" alt="">
+      <img src="dasara.jpg" alt="">
+      <img src="gabbersing.jpg" alt="">
+      <img src="dear_comred.jpg" alt="">
+      <img src="jersey.webp" alt="">
+    </div><hr>
+    <div class="about" id="about"><h1>Company</h1></div>
+    <a href="https://www.google.com">About Us</a>
+    <a href="https://www.google.com">carousel-control-next-icon</a>
+    <footer><div class="pl"><img src="google-playstore.webp" alt=""></div>
+    <div class="ip"><img src="ios-appstore.webp" alt=""></div></footer>
+  </div>  
+  </body>
+</html>   
