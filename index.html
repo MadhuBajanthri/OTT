@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
@@ -38,9 +40,10 @@
             /* top: 15px; */
         }
         .nav-items a{
-            font-size: 20px;
+            font-size: 17px;
             text-decoration: none;
             margin-left: 90px;
+            color: white;
             
 
         }
@@ -82,23 +85,108 @@
           box-shadow: 10px;
 
         }
+        .fw h1{
+          color: white;
+        }
         .rw img:hover{
           transform: scale(1.1);
         }
-        .pl{
-         transform: translate(850px,60px);
+        .rw h1{
+          color: white;
+        }
+        .tr img{
+          margin-left: 10px;
+          border-radius: 10px;
+          height: 390px;
+          width: 230px;
+          padding: 5px;
+          background-color: black;
+          position: relative;
+        }
+        .tr h1{
+          color: white;
+        }
+        .tr img:hover{
+          scale: 1.1;
+          transform: translateY(20deg);
+          box-shadow: 10px;
 
         }
-        .ip{
-          transform: translate(1150px,-10px);
+        .fv img{
+          margin-left: 10px;
+          border-radius: 10px;
+          height: 390px;
+          width: 230px;
+          padding: 5px;
+          background-color: black;
+          position: relative;
         }
-        .about{
-          font-size: 30px;
+        .fv img:hover{
+          scale: 1.1;
+          transform: translateY(20deg);
+          box-shadow: 10px;
+
         }
-        
-      
-        
-    </style>
+        .fv h1{
+          color: white;
+        }
+        footer .pl img{
+         transform: translate(1100px,60px);
+         height: 120px;
+         width: 120px;
+
+        }
+        footer .ip img{
+          transform: translate(1250px,-50px);
+          height: 120px;
+          width: 120px;
+        }
+        .about h1{
+          font-size: 20px;
+          font-weight: 500;
+          color: white;
+          margin-top: 50px;
+        }
+        .about a{
+          text-decoration: none;
+        }
+        .about h2{
+          font-size: 20px;
+          font-weight: 500;
+          color: white;
+          margin-top: -125px;
+          margin-left: 400px;
+        }
+        .about .a1{
+          margin-left: 400px;
+        }
+        .about h3{
+          font-size: 20px;
+          font-weight: 500;
+          color: white;
+          margin-top: -80px;
+          margin-left: 800px;
+        }
+        .about .a2{
+          margin-left: 800px;
+        }
+        .about h4{
+          font-size: 20px;
+          font-weight: 500;
+          color: white;
+          margin-top: -130px;
+          margin-left: 1100px;
+        }
+        .about #a3{
+          margin-left: 1100px;
+        }
+        .about #a4{
+          transform: translate(1200px,10px);
+          padding: 40px;
+        }
+       
+
+      </style>
 </head>
 <body>
   <div class="pavan">
@@ -109,11 +197,11 @@
         <div class="nav-items">
             <a href="#carouselExampleAutoplaying">Home</a>
             <a href="#freq">Frequently Watched</a>
-            <a href="#rect">Recent</a>
-            <a href="">Top rated</a>
-            <a href="">Favourate</a>
+            <a href="#rect">Recently watched</a>
+            <a href="#top">Top rated</a>
+            <a href="#fav">Favourate</a>
             <a href="#about">About</a>
-            <a href="">SignUp/SignIn</a>
+            <a href="Form.html">SignUp/SignIn</a>
         </div>
     </nav>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-intravel="2000">
@@ -168,11 +256,49 @@
       <img src="dear_comred.jpg" alt="">
       <img src="jersey.webp" alt="">
     </div><hr>
-    <div class="about" id="about"><h1>Company</h1></div>
-    <a href="https://www.google.com">About Us</a>
-    <a href="https://www.google.com">carousel-control-next-icon</a>
-    <footer><div class="pl"><img src="google-playstore.webp" alt=""></div>
-    <div class="ip"><img src="ios-appstore.webp" alt=""></div></footer>
+    <div class="tr" id="top"><h1>Top Rated</h1>
+      <img src="cameraman.jpg" alt="">
+      <img src="gudumbashankar.jpg">
+      <img src="Hari Hara Veera Mallu Pictures, Photo.PNG" alt="">
+      <img src="tammudu.webp" alt="">
+      <img src="Ori Devuda.webp" alt="">
+      <img src="KGF.jpg" alt=""><br><br>
+      <img src="dasara.jpg" alt="">
+      <img src="gabbersing.jpg" alt="">
+      <img src="dear_comred.jpg" alt="">
+      <img src="katamarayudu.jpg" alt="">
+      <img src="nenusailaja.webp" alt="">
+      <img src="premam.jpg" alt="">
+      <div class="fv" id="fav"><h1>favourates</h1>
+      <img src="attarintiki.jpg" alt="">
+      <img src="badri.jpg" alt="">
+      <img src="Bheemla-Nayak-1.webp">
+      <img src="jalsa.jpg" alt="">
+      <img src="agnathavaasi.jpg" alt="">
+      <img src="Panjaa.webp" alt=""><br><br>
+      <img src="cameraman.jpg" alt="">
+      <img src="gudumbashankar.jpg">
+      <img src="Hari Hara Veera Mallu Pictures, Photo.PNG" alt="">
+      <img src="tammudu.webp" alt="">
+      <img src="Ori Devuda.webp" alt="">
+      <img src="KGF.jpg" alt="">
+      </div>
+      <a href="Form.html" ><form action="Form.html"></form></a>
+    </div>
+    <div class="about" id="about"><h1>Company</h1><br>
+    <a href="https://www.google.com">About Us</a><br><br>
+    <a href="https://www.google.com">Career</a>
+    <h2>View Website in</h2><br>
+    <a href="https://www.google.com" class="a1">English</a>
+    <h3>Need Help?</h3><br>
+    <a href="https://www.google.com" class="a2">Visit Help Center</a><br><br>
+    <a href="https://www.google.com" class="a2">Share Feedback</a>
+    <h4>Connect With Us</h4><br>
+    <a href="https://www.facebook.com" id="a3"><i class="fa fa-facebook-f" style="font-size:48px;color:rgb(245, 242, 242)" id="face"></i></a>
+    <a href="https://www.twitter.com"  id="a4"><i class="fa fa-twitter" style="font-size:48px;color:rgb(243, 238, 238)"></i></a>
+  </div>
+    <footer><div class="pl"><a href="https://www.playstore.com"><img src="google-playstore.webp" alt=""></a></div>
+    <div class="ip"><a href="https://www.google.com"><img src="ios-appstore.webp" alt=""></a></div></footer>
   </div>  
   </body>
 </html>   
